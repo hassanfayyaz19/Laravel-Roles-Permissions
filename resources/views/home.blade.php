@@ -20,9 +20,13 @@
                         @can('update-post')
                         <a href="#" class="list-group-item list-group-item-action">update</a>
                         @endcan
+                        @can('list-post')
+                        <a href="#" class="list-group-item list-group-item-action ">list</a>
+                        @endcan
                         @can('publish-post')
                         <a href="#" class="list-group-item list-group-item-action ">publish</a>
                         @endcan
+
                     </div>
 
 

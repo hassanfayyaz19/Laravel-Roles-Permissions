@@ -45,8 +45,10 @@ class User extends Authenticatable
 
     public function hasAccess(array $permissions)
     {
+
         foreach ($this->roles as $role) {
-          
+
+            //Log::alert($role->name);
             if ($role->hasAccess($permissions)) {
                 //Log::alert('role->hasAccess');
                 return true;
